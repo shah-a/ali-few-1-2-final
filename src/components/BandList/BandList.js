@@ -11,7 +11,7 @@ function BandList() {
     const inStyle = band.style.toLowerCase().includes(query.toLowerCase());
     return (inTitle || inStyle);
   });
-  
+
   bands = bands.map(data => {
     return (
       <Band
@@ -19,6 +19,7 @@ function BandList() {
         band_name={data.band_name}
         formed={data.formed}
         origin={data.origin}
+        style={data.style}
         fans={data.fans}
         split={data.split}
       />
@@ -28,6 +29,7 @@ function BandList() {
   return (
     <div className="BandList">
       <div className="form">
+        <p>Total bands: {data.length}</p>
         <form>
           <input
             value={query}

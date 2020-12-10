@@ -8,7 +8,7 @@ function Like() {
       <button onClick={() => setLikes(likes + 1)}>
         👍
       </button>
-      {likes}
+      <h1>{likes}</h1>
       <button onClick={() => setLikes(likes - 1)}>
         👎
       </button>

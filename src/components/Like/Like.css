@@ -1,0 +1,15 @@
+.Like {
+  display: flex;
+  align-items: center;
+}
+
+.Like h1 {
+  display: inline-block;
+  padding: 0 1rem;
+}
+.Like button {
+  font-size: 1em;
+  padding: 0.5em 1em;
+  border-radius: 0.5em;
+  background-color: #333;
+}
