@@ -10,6 +10,7 @@ const bands = data.map(data => {
       formed={data.formed}
       origin={data.origin}
       fans={data.fans}
+      split={data.split}
     />
   );
 });
